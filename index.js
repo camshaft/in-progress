@@ -21,6 +21,8 @@ var loading = 0;
 exports = module.exports = function(startData) {
   var used = false;
 
+  if (loading === 0) exports.emit('loading');
+
   loading++;
 
   exports.emit('update', loading);
@@ -32,6 +34,7 @@ exports = module.exports = function(startData) {
     used = true;
     loading--;
     exports.emit('update', loading, startData, endData);
+    if (loading === 0) exports.emit('idle');
   };
 };
 
