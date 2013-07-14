@@ -1,0 +1,15 @@
+{
+  "name": "in-progress",
+  "repo": "CamShaft/in-progress",
+  "description": "Track operations in progress",
+  "version": "0.1.0",
+  "keywords": [],
+  "dependencies": {
+    "component/emitter": "*"
+  },
+  "development": {},
+  "license": "MIT",
+  "scripts": [
+    "index.js"
+  ]
+}
